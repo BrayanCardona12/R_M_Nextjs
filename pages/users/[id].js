@@ -10,7 +10,7 @@ const UserProfile = (props) => {
     return(
         <Container>
            
-            <div style={{backgroundColor: "#C4C5D0"}} className="rounded d-flex flex-column align-items-center w-50 mx-auto">
+            <div style={{backgroundColor: "#C4C5D0"}} className="rounded d-flex flex-column text-center align-items-center w-50 mx-auto">
                 <img className='img-fluid img-thumbnail m-3' src={props.data.image} alt='photo-character'/>
                 <h1 style={{fontSize: '3em'}}>{props.data.name}</h1>  
             
