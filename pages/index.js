@@ -3,12 +3,14 @@ import Container from "../components/Container"
 import CardUsers from "../components/Users"
 
 const Index = (datos) => {
-    console.log(datos)
+
     return (
         <>
             <Container>
-                <h1>Characters</h1>
-                <CardUsers user={datos}/>   
+                <h1 className="text-center">Characters</h1>
+                <div className="mw-100 min-vh-100 d-flex flex-wrap justify-content-center">
+                    <CardUsers user={datos} />
+                </div>
             </Container>
         </>
     )
@@ -17,8 +19,8 @@ const Index = (datos) => {
 Index.getInitialProps = async (ctx) => {
     const resp = await fetch('https://rickandmortyapi.com/api/character')
     const data = await resp.json()
-    
-    return {data}
+
+    return { data }
 }
 
 export default Index
