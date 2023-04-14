@@ -1,13 +1,14 @@
-
+import { useEffect, useState } from "react"
 import Container from "../components/Container"
 import CardUsers from "../components/Users"
 
 const Index = (datos) => {
 
+
     return (
         <>
             <Container>
-                <h1 className="text-center">Characters</h1>
+                <h1 className="text-center">Character</h1>
                 <div className="mw-100 min-vh-100 d-flex flex-wrap justify-content-center">
                     <CardUsers user={datos} />
                 </div>
