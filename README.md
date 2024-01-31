@@ -3,3 +3,5 @@
 
 Aplicativo web que consume la api de Rick And Morty. 
 (Este proyecto se desarrolló con el objetivo de interactuar con el framework de NextJS).
+
+- URL: https://nextfast-nine.vercel.app/
